@@ -920,11 +920,9 @@ img {
    grid-template-columns: repeat(12, 1fr);
 }
 
-/*
- ================= 
-FLEXES AND FLOATS - Gary
- ================= 
-*/
+/*========================*/
+/*FLEXES AND FLOATS - Gary*/
+/*========================*/
 
 .flex {
    display: inline-flex;
@@ -949,15 +947,13 @@ FLEXES AND FLOATS - Gary
 }
 
 /* PARALLAX SCROLL */
-/*===============================================*/
+/*========================*/
 
 .parallax {
    /* Image */
    background-image: url("../images/bgImg01.jpg");
-
    /* Set a height */
    min-height: 300px;
-
    /* Code for parallax scroll effect*/
    background-attachment: fixed;
    background-position: center;
@@ -967,7 +963,7 @@ FLEXES AND FLOATS - Gary
 
 
 /* MUSIC PLAYER - Ruby  */
-/*===============================================*/
+/*========================*/
 
 audio {
    width: 250px;
@@ -1001,8 +997,6 @@ audio {
    display: flex;
    justify-content: center;
    margin: 3px auto;
-
-   /* text-align:center; */
 }
 
 .buttons button {
@@ -1011,7 +1005,7 @@ audio {
 
 
 /* VIDEO PLAYER - Ruby */
-/*===============================================*/
+/*===================================*/
 
 select {
    margin: 1em;
