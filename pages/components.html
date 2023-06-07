@@ -237,9 +237,9 @@
    }</code></pre>
 
             </article>
-
-            <article>
-               <h2 class="bold">Video player</h2>
+<!-- VIDEO PLAYER -->
+          <article>
+               <h2>Video player</h2>
                <p>We provide a simple video player to showcase your favorite video. We have the option to display your own video that you have to upload in the images folder, and also one link for a Youtube video. And it would look like the following.</p>
                <div>
                   <select id="video-selection">
@@ -260,19 +260,21 @@
                   </div>
                </div>
 
-             <!-- youtube video write youtube video id -->
-         <div class="video-player" id="youtube-video-player">
-            <iframe class="video" src="https://www.youtube.com/embed/al8QECyX3eY" allowfullscreen>
-            </iframe>
-            <div class="controls">
-               <button class="play-pause">Play/Pause</button>
-               <input class="volume" type="range" min="0" max="1" step="0.1" value="1">
-            </div>
-         </div>
+               <!-- youtube video write youtube video id -->
+               <div class="video-player" id="youtube-video-player">
+                  <iframe class="video" src="https://www.youtube.com/embed/_Td7JjCTfyc" allowfullscreen>
+                  </iframe>
+                  <div class="controls">
+                     <button class="play-pause">Play/Pause</button>
+                     <input class="volume" type="range" min="0" max="1" step="0.1" value="1">
+                  </div>
+               </div>
 
                <p>Example code: For the video player, you should add several classes and id, as the code sample shows. Also, you should only put your own video in same folder or you have to give right path as the code sample shows.</p>
 
-               <pre><code class="language-html">&lt;select id="video-selection">
+               <pre>
+<code class="language-html">
+&lt;select id="video-selection">
 &lt;option value="" disabled selected>Select Video Type&lt;/option>
 &lt;option value="own">Own Video&lt;/option>
 &lt;option value="youtube">YouTube Video&lt;/option>
@@ -283,7 +285,7 @@
 
 &lt;div class="video-player" id="own-video-player">
 &lt;video class="video active" controls>
-&lt;source src="yourVideoName.mp4" type="video/mp4">
+&lt;source src="Assignment1.4.mp4" type="video/mp4">
 &lt;/video>
 &lt;div class="controls">
 &lt;button class="play-pause">Play/Pause&lt;/button>
@@ -302,7 +304,9 @@
 &lt;div class="controls">
 &lt;button class="play-pause">Play/Pause&lt;/button>
 &lt;input class="volume" type="range" min="0" max="1" step="0.1"value="1">
-&lt;/div></code></pre>
+&lt;/div>
+</code>
+</pre>
             </article>
             
                 <article>

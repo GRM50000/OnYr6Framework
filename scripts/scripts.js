@@ -232,7 +232,6 @@ pauseButton.addEventListener("click", function () {
 var videoSelection = document.getElementById('video-selection');
 var ownVideoPlayer = document.getElementById('own-video-player');
 var youtubeVideoPlayer = document.getElementById('youtube-video-player');
-var garyVideoPlayer = document.getElementById('gary-video-player');
 
 videoSelection.addEventListener('change', function () {
    var selectedValue = videoSelection.value;
@@ -242,14 +241,8 @@ videoSelection.addEventListener('change', function () {
       youtubeVideoPlayer.classList.remove('active');
    } else if (selectedValue === 'youtube') {
       ownVideoPlayer.classList.remove('active');
-      garyVideoPlayer.classList.remove('active');
       youtubeVideoPlayer.classList.add('active');
-      
-   } else if (selectedValue === 'gary') {
-      youtubeVideoPlayer.classList.remove('active');
-      ownVideoPlayer.classList.remove('active');
-      garyVideoPlayer.classList.add('active');
-   } 
+   }
 });
 
 var videoPlayers = document.querySelectorAll('.video-player');
