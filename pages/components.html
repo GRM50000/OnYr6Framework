@@ -305,24 +305,24 @@
 &lt;/div></code></pre>
             </article>
             
-            <article>
-               <h2 class="bold">Music Player</h2>
-               <p>Teasing a new album? Want to give fans a peek into what goes into music production with a fun pre-production track? Look no further than our music player!</p><p>Save tracks to your assets folder, add our code, style accordingly, and with just a click of a (Play) button, enjoy playing music  on your own website!</p>
+                <article>
+               <h2>Music Player</h2>
+               <p>Teasing a new album? Wanting to give fans a peek into what goes into music production with a fun pre-production track? Look no further than our music player! Save tracks to your assets folder, copy our code, style accordingly and with just a click of a (play) button, enjoy music playing on your website! </p>
 
-               <div class="buttons-container">                  <div class="todo-list"> <input type="text" class="todo-input green button" placeholder="Enter Song Name" style="margin:auto; margin-bottom: 10px;">
-                  <ul class="redT flex italic">
-                  <li>gary1.mp3</li>
-                  <li>gary2.mp3</li>
-                  <li>gary3.mp3</li>
-                  </ul>
-<!-- this is where the song list appears -->
-                  </div>
-            </div>
+               <div class="buttons-container">
+                  <input type="text" class="todo-input" placeholder="Enter a new Song">
+                  <!-- <input type="text" class="todo-input" placeholder="Enter a new to-do item"> -->
                   <div class="buttons">
                      <button onclick="addTodo()">Add Song name</button>
                      <button onclick="editTodo()">Edit Song name</button>
-                     <button onclick="deleteTodo()">Delete song name</button>   
+                     <button onclick="deleteTodo()">Delete song name</button>
+                  </div>
+
                </div>
+            </article>
+            <div class="todo-list">
+             
+            </div>
             <div>
                <button onclick="playSong()" class="playbtn">Load / Play Song</button>
                <button id="pauseButton" class="pause">Pause</button><audio id="audioPlayer" controls autoplay>
@@ -332,37 +332,34 @@
             </div>
 
             <div id="controls">
-               <input id="volume" type="range" min="0" max="1" step="0.1" value=".5"> Volume
+               <input id="volume" type="range" min="0" max="1" step="0.1" value="1">
             </div>
-            <p>Example code:</p>
-<pre><code class="language-html">&lt;div class="buttons-container">
-     &lt;input type="text" class="todo-input green button" placeholder="Enter Song Name">
-&lt;ul class="flex italic">&lt;li>gary1.mp3&lt;/li>
-      &lt;li>gary2.mp3&lt;/li>
-      &lt;li>gary3.mp3&lt;/li>
-      &lt;/ul>                  
-       	&lt;div class="todo-list">
-&lt;!--  this is where the song list appears -->
-        &lt;/div>
-        &lt;/div>
-      &lt;div class="buttons">
-         &lt;button onclick="addTodo()">Add Song name&lt;/button>
-         &lt;button onclick="editTodo()">Edit Song name&lt;/button>
-         &lt;button onclick="deleteTodo()">Delete song name&lt;/button>   
-      &lt;/div>
-    &lt;/article>
-      &lt;div>
-  &lt;button onclick="playSong()" class="playbtn">Load / Play Song&lt;/button>
-  &lt;button id="pauseButton" class="pause">Pause&lt;/button>&lt;audio id="audioPlayer" controls autoplay>
-  &lt;source src="https://www.garyreidmusic.com/assets/hitit.mp3" type="audio/mpeg">
-  &lt;/audio>
-  &lt;/div>
-
-&lt;div id="controls">
-&lt;input id="volume" type="range" min="0" max="1" step="0.1" value=".5"> Volume
-&lt;/div></code></pre>
+            <pre>
+               <code class="language-html">&lt;div class="buttons-container">
+               &lt;input type="text" class="todo-input" placeholder="Enter a new Song">
+                  
+               &lt;div class="buttons">
+                     &lt;button onclick="addTodo()">Add Song name&lt;/button>
+                     &lt;button onclick="editTodo()">Edit Song name&lt;/button>
+                     &lt;button onclick="deleteTodo()">Delete song name&lt;/button>
+                  &lt;/div>
+               
+               &lt;/div>
+               &lt;div class="todo-list">
+               
+               &lt;/div>
+               &lt;div>
+               &lt;button onclick="playSong()" class="playbtn">Load / Play Song&lt;/button>
+               &lt;button id="pauseButton" class="pause">Pause&lt;/button>&lt;audio id="audioPlayer" controls autoplay>
+                  &lt;source src="filename.mp3" type="audio/mpeg">
+                  <!-- add more source tags for different audio formats if needed -->
+               &lt;/audio>
+               &lt;/div>
+               &lt;div id="controls">
+               &lt;input id="volume" type="range" min="0" max="1" step="0.1" value="1">
+               &lt;/div>
+               </code></pre>
          </article>
-
          <article>
             <h2 class="bold">Lightbox</h2>
 
