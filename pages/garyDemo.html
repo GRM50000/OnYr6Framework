@@ -26,19 +26,17 @@
 </head>
 
 <body>
-   <header>
+   <header class="red">
       <nav class="topNav">
          <a href="../index.html" id="logoLink">
-            <img src="../images/OnYr6_a.svg" alt="music symbol" id="logo">
+            <img class="flex" src="https://www.garyreidmusic.com/images/Reid_Logo_SVG.svg" height="300" alt="music symbol" id="logo">
          </a>
          <ul class="menu">
             <li>
                <a href="../index.html" class="menuItem">Home</a>
-
             </li>
             <li>
                <a href="../pages/elements.html" class="menuItem">Elements</a>
-
             </li>
             <li>
                <a href="../pages/components.html" class="active menuItem">Components</a>
@@ -47,25 +45,26 @@
                <a href="../pages/demos.html" class="menuItem">Demos</a>
             </li>
          </ul>
-         <button class="icon" id="needsID1">
+         <button class="icon round button M" id="needsID1">
             <i class="fa-solid fa-bars menuIcon"></i>
             <i class="fa-regular fa-rectangle-xmark closeIcon"></i>
          </button>
       </nav>
    </header>
 
-<main class="red whiteT">
-      <article style="width: 50%;">
+<main class="container2 black yellowT">
+      <h3 class="bold center">@Gary Reid Music</h2>
+         <article class="onyr6-grid">
          <!-- video player -->
-         <h1>@GaryReidMusic</h1>
-         <h2>Video player</h2>
-         <p>We provide a simple video player to showcase your favorite video. We have the option to display your own video that you have to upload in the images folder, and also one link for a Youtube video. And it would look like the following.</p>
+         <section class="wide6">
+         <h3 class="center italic">Check My Vids</h3>
+         <p>I've been putting Rhythm Guitar, Drum, and Metronome videos on YT for people to jam along with since 2017. If you're a fellow musician, I bet there's something here you'll Love!</p>
          <div>
             <select id="video-selection">
                <option value="" id="yo" disabled selected>Select Video Type</option>
-               <option value="own">Own Video</option>
-               <option value="youtube">YouTube Video</option>
-               <option value="gary">Gary YouTube</option>
+               <option value="own">D Major Rhythm Guitar</option>
+               <option value="youtube">Rock Drum Beat 132 BPM</option>
+               <option value="gary">240 BPM Metronome</option>
             </select>
          </div>
 
@@ -82,7 +81,7 @@
 
          <!-- youtube video write youtube video id -->
          <div class="video-player" id="youtube-video-player">
-            <iframe class="video" src="https://www.youtube.com/embed/_Td7JjCTfyc" allowfullscreen>
+            <iframe class="video" src="https://www.youtube.com/embed/al8QECyX3eY" allowfullscreen>
             </iframe>
             <div class="controls">
                <button class="play-pause">Play/Pause</button>
@@ -92,31 +91,29 @@
          
            <!-- Gary video write youtube video id -->
          <div class="video-player" id="gary-video-player">
-                  <iframe class="video" src="https://www.youtube.com/embed/oNlaLRvTClQ" allowfullscreen>
+                  <iframe class="video" src="https://www.youtube.com/embed/JajWJTUc6K4" allowfullscreen>
                   </iframe>
                   <div class="controls inline">
                      <button class="play-pause">Play/Pause</button>
                      <input class="volume" type="range" min="0" max="1" step="0.1" value="1">
                   </div>
-               </div>
-      </article>
-
-      <!-- music player -->
-      <article>
-         <h2>Music Player</h2>
-         <p>Teasing a new album? Wanting to give fans a peek into what goes into music production with a fun pre-production track? Look no further than our music player! Save tracks to your assets folder, copy our code, style accordingly and with just a click of a (play) button, enjoy music playing on your website! </p>
-
+               </div></section>
+               <section class="wide6 ">
+                  
+         <h3 class="redT lightGray center italic">Music Player</h3>
+         <p>I put out new music every week, and here is where you'll be able to hear it for Free!</p>
          <div class="buttons-container">
-            <input type="text" class="todo-input" placeholder="Enter a new Song" id="needsID">
-            <!-- <input type="text" class="todo-input" placeholder="Enter a new to-do item"> -->
+            <input type="text" class="todo-input button yellow" placeholder="Enter a new Song" id="needsID">
+        <ol class="redT"><li>gary1.mp3</li>
+           <li>gary2.mp3</li>
+        <li>gary3.mp3</li></ol>
             <div class="buttons">
-               <button onclick="addTodo()">Add Song name</button>
-               <button onclick="editTodo()">Edit Song name</button>
-               <button onclick="deleteTodo()">Delete song name</button>
+               <button onclick="addTodo()">Choose Song Name</button>
+               <button onclick="editTodo()">Edit Song Name</button>
+               <button onclick="deleteTodo()">Delete Song</button>
             </div>
-
          </div>
-         <div class="todo-list">
+         <div class="todo-list blackT">
 
          </div>
          <div>
@@ -125,36 +122,14 @@
                <source src="https://www.garyreidmusic.com/assets/hitit.mp3" type="audio/mpeg">
                <!-- add more source tags for different audio formats if needed -->
             </audio>
+             <input id="volume" type="range" min="0" max="1" step="0.1" value="1">
          </div>
+               </section>
+               
+      </article>
 
-         <div id="controls">
-            <input id="volume" type="range" min="0" max="1" step="0.1" value="1">
-         </div>
-         <pre>
-               <code class="language-html">&lt;div class="buttons-container">
-               &lt;input type="text" class="todo-input" placeholder="Enter a new Song" id="needsID">
-                  
-               &lt;div class="buttons">
-                     &lt;button onclick="addTodo()">Add Song name&lt;/button>
-                     &lt;button onclick="editTodo()">Edit Song name&lt;/button>
-                     &lt;button onclick="deleteTodo()">Delete song name&lt;/button>
-                  &lt;/div>
-               
-               &lt;/div>
-               &lt;div class="todo-list">
-               
-               &lt;/div>
-               &lt;div>
-               &lt;button onclick="playSong()" class="playbtn">Load / Play Song&lt;/button>
-               &lt;button id="pauseButton" class="pause">Pause&lt;/button>&lt;audio id="audioPlayer" controls autoplay>
-                  &lt;source src="filename.mp3" type="audio/mpeg">
-                  <!-- add more source tags for different audio formats if needed -->
-               &lt;/audio>
-               &lt;/div>
-               &lt;div id="controls">
-               &lt;input id="volume" type="range" min="0" max="1" step="0.1" value="1">
-               &lt;/div>
-               </code></pre>
+      <!-- music player -->
+      <article>
       </article>
 
 
@@ -162,7 +137,7 @@
 
 
 
-   <footer>
+   <footer class="red whiteT">
       <a href="../index.html"><img src="https://www.garyreidmusic.com/images/Reid_Logo_SVG.svg" alt="Gary Reid Music" width="133" class="fl-right"></a>
       <ol class="decimal2 bold greyT">Thanks To The Road Crew:
          <li> Gary Reid </li>
