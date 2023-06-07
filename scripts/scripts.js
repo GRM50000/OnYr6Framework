@@ -226,6 +226,7 @@ pauseButton.addEventListener("click", function () {
 });
 
 
+
 // VIDEO PLAYER
 
 var videoSelection = document.getElementById('video-selection');
