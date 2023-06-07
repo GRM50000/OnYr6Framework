@@ -241,8 +241,10 @@ videoSelection.addEventListener('change', function () {
       youtubeVideoPlayer.classList.remove('active');
    } else if (selectedValue === 'youtube') {
       ownVideoPlayer.classList.remove('active');
+      garyVideoPlayer.classList.remove('active');
       youtubeVideoPlayer.classList.add('active');
-   } else {
+      
+   } else if (selectedValue === 'gary') {
       youtubeVideoPlayer.classList.remove('active');
       ownVideoPlayer.classList.remove('active');
       garyVideoPlayer.classList.add('active');
